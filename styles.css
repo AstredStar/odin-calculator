@@ -1,36 +1,60 @@
-:root{
-    --grid-size : 600px;
-    --pixel-border-color: white;
-    --pixel-border-size: 1px;
+
+html, body {
+    height: 100%;
+    margin: 0;
 }
-
-
 body {
-    padding: 50px 0;
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: darkslategrey;
-    min-width: 750px;
-
+    min-width: 550px;
+    height: 100%;
 }
 
-#midStrip{
-    padding: 0 10px 0;
-    width: 700px;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
+body *{
+    border: solid black 2px;
+}
+
+#btn-panel, .btn-row{
+    border: 0px;
 }
 
 #face{
-    height: 720px;
     padding: 50px;
     background-color:antiquewhite;
     border-radius: 30px;
-    flex:0 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
 }
 
 #display{
-    height:50px;
+    height:150px;
     background-color: aquamarine;
+    border-radius: 10px;
+}
+
+#btn-panel{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:10px;
+}
+
+.btn-row{
+    display: flex;
+    gap:10px;
+}
+
+button{
+    border-radius: 5px;
+    height: 100px;
+    width: 100px;
+    margin: 0;
+}
+#btn-equals{
+    width: 210px;
 }
